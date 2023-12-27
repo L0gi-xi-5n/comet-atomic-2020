@@ -7,6 +7,7 @@ import os
 import sys
 import nltk
 from nltk.translate.meteor_score import meteor_score
+from nltk.tokenize import word_tokenize  # [FL] Addition to repair type error in call to meteor_score
 
 # Assumes meteor-1.5.jar is in the same directory as meteor.py.  Change as needed.
 #METEOR_JAR = 'meteor-1.5.jar'
@@ -24,7 +25,9 @@ class Meteor:
 
         for i in imgIds:
             assert(len(res[i]) == 1)
-            score = round(meteor_score(gts[i], res[i][0]), 4)
+            gts_tokenized = list(map(word_tokenize, gts[i]))        # [FL] Addition of tokenization step
+            res_tokenized = list(word_tokenize(res[i][0]))             # [FL] Addition of tokenization step
+            score = round(meteor_score(gts_tokenized, res_tokenized), 4)   # [FL] Original call meteor_score(gts[i], res[i][0])
             scores.append(score)
         #print('{}\n'.format(eval_line))
         #self.meteor_p.stdin.write('{}\n'.format(eval_line))
