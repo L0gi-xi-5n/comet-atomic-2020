@@ -25,9 +25,9 @@ class Meteor:
 
         for i in imgIds:
             assert(len(res[i]) == 1)
-            gts_tokenized = list(map(word_tokenize, gts[i]))        # [FL] Addition of tokenization step
-            res_tokenized = list(word_tokenize(res[i][0]))             # [FL] Addition of tokenization step
-            score = round(meteor_score(gts_tokenized, res_tokenized), 4)   # [FL] Original call meteor_score(gts[i], res[i][0])
+            gts_tokenized = list(map(word_tokenize, gts[i]))                # [FL] Addition of tokenization step
+            res_tokenized = list(word_tokenize(res[i][0]))                  # [FL] Addition of tokenization step
+            score = round(meteor_score(gts_tokenized, res_tokenized), 4)    # [FL] Original call meteor_score(gts[i], res[i][0])
             scores.append(score)
         #print('{}\n'.format(eval_line))
         #self.meteor_p.stdin.write('{}\n'.format(eval_line))
