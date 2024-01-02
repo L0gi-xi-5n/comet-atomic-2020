@@ -1,6 +1,5 @@
 import numpy as np
 from nltk.translate.bleu_score import sentence_bleu
-from tabulate import tabulate
 import json
 import os
 from collections import defaultdict
@@ -215,11 +214,3 @@ def eval_partition(input_file):
         rows.append(s_row)
 
     return scores_per_model
-
-#    import datetime
-#    date = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-#   print(scores_per_model)
-
-#    write_jsonl('./results/scores_{}.jsonl'.format(date), scores_per_model)
-#    print(tabulate(rows, headers='firstrow', tablefmt='latex', floatfmt='#.3f'))
-#    print(tabulate(rows, tablefmt='tsv', floatfmt='#.3f'))
