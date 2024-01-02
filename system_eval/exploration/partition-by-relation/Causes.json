@@ -1,0 +1,9 @@
+{"head":"red wine","relation":"Causes","tails":["migraines"],"generations":["wine","wine taste","red wine","wine making","wine tasting","alcohol","drink","taste","flavor"],"greedy":"wine"}
+{"head":"snow","relation":"Causes","tails":["avalanches","blizzard","shovelling"],"generations":["frostbite","cold weather","cold","warm weather","snowman","snowstorm","freezing rain","snowflake","snow"],"greedy":"snow"}
+{"head":"presence of cloud","relation":"Causes","tails":["rain"],"generations":["cloud cover","rain","thunderstorm","dark sky","cloudy sky","cloudy skies","cloudiness","dark skies","sunburn"],"greedy":"rain"}
+{"head":"argument","relation":"Causes","tails":["violence"],"generations":["argument","debate","conflict","dispute","arguments","disagreement","win","victory","logic"],"greedy":"argument"}
+{"head":"fear","relation":"Causes","tails":["trembling"],"generations":["fear","panic attack","terror","panic attacks","feel fear","death","panic","anxiety","fright"],"greedy":"fear"}
+{"head":"sickness","relation":"Causes","tails":["suffering"],"generations":["bad health","get sick","bad breath","sick people","feel bad","bad luck","feel sick","sickness","bad news"],"greedy":"bad health"}
+{"head":"alcoholism","relation":"Causes","tails":["stigma"],"generations":["alcohol abuse","alcohol poisoning","alcohol addiction","get drunk","bad health","alcohol consumption","bad breath","drunk driving","alcoholics"],"greedy":"alcohol abuse"}
+{"head":"purchase","relation":"Causes","tails":["having less money"],"generations":["good deal","spend money","make money","good value","purchase","good product","good service","money","good quality"],"greedy":"purchase"}
+{"head":"bad weather","relation":"Causes","tails":["power outages"],"generations":["bad weather","thunderstorm","thunderstorms","heat wave","heat stroke","bad roads","bad luck","water damage","heat waves"],"greedy":"bad weather"}
