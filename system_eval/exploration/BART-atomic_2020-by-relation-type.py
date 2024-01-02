@@ -41,10 +41,6 @@ empty_dir(out_dir_name)
 df = pd.read_json(in_file_name, lines=True)
 partition_by_relation(df)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 7d489801e6a76b905cd1874db860402606f7a033
 scores_per_relation = {}
 input_files = os.listdir(out_dir_name)
 for file_name in input_files:
@@ -53,9 +49,4 @@ for file_name in input_files:
     scores_per_relation.update({file_name.split('.')[0] : evaluation[0]['scores']})
 
 all_scores = pd.DataFrame(scores_per_relation)    
-<<<<<<< HEAD
 print(tabulate(all_scores.T, tablefmt='tsv', floatfmt='#.3f', headers="keys"))
-=======
-print(tabulate(all_scores.T, tablefmt='tsv', floatfmt='#.3f', headers="keys"))
-
->>>>>>> 7d489801e6a76b905cd1874db860402606f7a033
