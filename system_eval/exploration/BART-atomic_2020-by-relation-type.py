@@ -42,11 +42,43 @@ df = pd.read_json(in_file_name, lines=True)
 partition_by_relation(df)
 
 scores_per_relation = {}
+
+ordered_relations = [
+    "isAfter",
+    "isBefore",
+    "xNeed",
+    "HinderedBy",
+    "oReact",
+    "xReact",
+    "xWant",
+    "oEffect",
+    "oWant",
+    "xAttr",
+    "xEffect",
+    "xIntent",
+    "ObjectUse",
+    "isFilledBy",
+    "AtLocation",
+    "CapableOf",
+    "HasProperty",
+    "MadeUpOf",
+    "HasSubEvent",
+    "Causes",
+    "xReason",
+    "Desires",
+    "NotDesires"
+]
+
 input_files = os.listdir(out_dir_name)
-for file_name in input_files:
-    evaluated = os.path.join("exploration", "partition-by-relation", file_name)
+
+if not len(input_files) == len(ordered_relations):
+    sys.exit("Mismatch between ordered relations and available input files!!")
+
+for file_name in ordered_relations:
+    evaluated = os.path.join("exploration", "partition-by-relation", file_name + ".json")
     evaluation = eval_partition(evaluated)
     scores_per_relation.update({file_name.split('.')[0] : evaluation[0]['scores']})
 
 all_scores = pd.DataFrame(scores_per_relation)    
 print(tabulate(all_scores.T, tablefmt='tsv', floatfmt='#.3f', headers="keys"))
+print(tabulate(all_scores.T, tablefmt='latex', floatfmt='#.3f', headers="keys"))
