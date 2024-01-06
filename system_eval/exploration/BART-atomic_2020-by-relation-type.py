@@ -74,6 +74,9 @@ input_files = os.listdir(out_dir_name)
 if not len(input_files) == len(ordered_relations):
     sys.exit("Mismatch between ordered relations and available input files!!")
 
+#Debugging
+ordered_relations = ["Causes"]
+
 for file_name in ordered_relations:
     evaluated = os.path.join("exploration", "partition-by-relation", file_name + ".json")
     evaluation = eval_partition(evaluated)
