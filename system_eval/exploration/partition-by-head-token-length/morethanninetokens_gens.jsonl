@@ -1,0 +1,2 @@
+{"generation": "none", "references": ["to have been lazy at work", "to have wasted resources", "none", "to have used their money on unnecessary things"], "input": {"head": "PersonX takes things for granted", "relation": "xNeed"}}
+{"generation": "PersonX is in a wheelchair.", "references": ["get the phone", "recognize the person needs an ambulance", "to see Person Y is hurt.", "to get a phone.", "none"], "input": {"head": "PersonX calls PersonY ambulance", "relation": "xNeed"}}
