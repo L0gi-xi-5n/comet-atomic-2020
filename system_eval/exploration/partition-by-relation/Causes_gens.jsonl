@@ -1,0 +1,9 @@
+{"generation": "wine", "references": ["to have been lazy at work", "to have wasted resources", "none", "to have used their money on unnecessary things"], "input": {"head": "PersonX takes things for granted", "relation": "xNeed"}}
+{"generation": "snow", "references": ["get the phone", "recognize the person needs an ambulance", "to see Person Y is hurt.", "to get a phone.", "none"], "input": {"head": "PersonX calls PersonY ambulance", "relation": "xNeed"}}
+{"generation": "rain", "references": ["to say thanks for making it", "to eat it", "to produce something", "to be in their good graces"], "input": {"head": "PersonX pleases ___ to make", "relation": "xWant"}}
+{"generation": "argument", "references": ["is physical", "none", "is violent"], "input": {"head": "PersonX shoves PersonY back", "relation": "xEffect"}}
+{"generation": "fear", "references": ["to keep in contact for 2nd dates", "to propose", "to go to the movies", "to go to dinner", "to get married"], "input": {"head": "PersonX dates for years", "relation": "xWant"}}
+{"generation": "bad health", "references": ["PersonX researches an article about current events"], "input": {"head": "PersonX covers every aspect", "relation": "isAfter"}}
+{"generation": "alcohol abuse", "references": ["PersonX sees a flyer for a festival"], "input": {"head": "PersonX wants to go", "relation": "isAfter"}}
+{"generation": "purchase", "references": ["Has heart attack", "goes to the hospital", "Has hair burned", "gets hurt"], "input": {"head": "PersonX hits by lightning", "relation": "xEffect"}}
+{"generation": "bad weather", "references": ["ask friend to be introduced to PersonY", "Get dressed", "Find person", "to search for person Y", "travels to meet PersonY", "to be away from person Y for sometime"], "input": {"head": "PersonX finally meet PersonY", "relation": "xNeed"}}

@@ -1,2 +1,6 @@
 .DS_store
 __pycache__/
+
+system_eval/results
+
+.vscode

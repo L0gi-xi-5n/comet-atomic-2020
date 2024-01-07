@@ -109,21 +109,6 @@ all_relations = [
 
 if __name__ == "__main__":
 
-    # sample usage (reproducing AAAI)
-#    print("model loading ...")
-#    comet = Comet("./comet-atomic_2020_BART_aaai")
-#    comet.model.zero_grad()
-#    print("model loaded")
-#    queries = []
-#    head = "PersonX pleases ___ to make"
-#    rel = "xWant"
-#    query = "{} {}".format(head, rel)
-#    queries.append(query)
-#    print(queries)
-#    results = comet.generate(queries, decode_method="greedy", num_generate=5)
-#    print(results)
-
-
     # sample usage (reproducing demo)
     print("model loading ...")
     comet = Comet("./comet-atomic_2020_BART")
@@ -132,6 +117,7 @@ if __name__ == "__main__":
     queries = []
 
     # Experiment 1: Hume's theory of causation
+    # ----------------------------------------
     #head = "striking a ball"
     #head = "kicking a ball"                     
     #head = "pushing a ball"                     
@@ -141,6 +127,7 @@ if __name__ == "__main__":
     #head = "in view of Hume's theory of causation, kicking a ball"
 
     # Experiment 2: Social interpretation of causation
+    # ------------------------------------------------
     #head = "having an itch"
     #head = "smoking"
     head = "playing with fire"
